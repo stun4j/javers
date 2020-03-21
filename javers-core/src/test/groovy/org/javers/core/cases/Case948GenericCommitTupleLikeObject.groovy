@@ -6,7 +6,7 @@ import org.javers.core.commit.Commit
 
 import spock.lang.Specification
 
-class Case948CommitTupleLikeObject extends Specification {
+class Case948GenericCommitTupleLikeObject extends Specification {
 	class Pair<L, R> {
 		L left;
 		R right;
@@ -22,7 +22,7 @@ class Case948CommitTupleLikeObject extends Specification {
 		}
 	}
 
-	def "should tracking work when committing tuple-like object"(){
+	def "should tracking work when committing generic-tuple-like object"(){
 		given:
 		Javers javers = JaversBuilder.javers().build();
 		//Pair<Long, String> obj = org.apache.commons.lang3.tuple.MutablePair.of(1L, "foo");
