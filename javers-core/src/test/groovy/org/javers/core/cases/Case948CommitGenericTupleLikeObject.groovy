@@ -6,7 +6,7 @@ import org.javers.core.commit.Commit
 
 import spock.lang.Specification
 
-class Case948GenericCommitTupleLikeObject extends Specification {
+class Case948CommitGenericTupleLikeObject extends Specification {
 	class Pair<L, R> {
 		L left;
 		R right;
